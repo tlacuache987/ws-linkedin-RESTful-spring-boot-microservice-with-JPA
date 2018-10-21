@@ -2,6 +2,9 @@
 bin/
 tmp/
 Servers/
+
+Ex_Files_RESTful_JPA_Upd/
+Ex_Files_RESTful_JPA_Upd.zip
 *.tmp
 *.bak
 *.swp
