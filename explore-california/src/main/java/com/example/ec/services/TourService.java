@@ -25,13 +25,13 @@ public class TourService {
 
 	public Tour createTour(String title, String description, String blurb, 
 						   Integer price, String duration, String bullets, 
-						   String keywords, String tourPackageCode, 
+						   String keywords, String tourPackageName, 
 						   Difficulty difficulty, Region region){
 		
-		TourPackage tourPackage = tourPackageService.lookupTourPackage(tourPackageCode);
+		TourPackage tourPackage = tourPackageService.lookupTourPackageByName(tourPackageName);
 		
 		if(tourPackage == null) {
-			throw new RuntimeException("Tour package "+tourPackageCode+" doesn't exist");
+			throw new RuntimeException("Tour package "+tourPackageName+" doesn't exist");
 		}
 		
 		Tour tour = Tour.builder().

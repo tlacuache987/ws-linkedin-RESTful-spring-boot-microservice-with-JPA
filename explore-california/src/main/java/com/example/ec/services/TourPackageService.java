@@ -29,8 +29,12 @@ public class TourPackageService {
 		return tourPackageRepository.findAll();
 	}
 
-	public TourPackage lookupTourPackage(String code) {
+	public TourPackage lookupTourPackageByCode(String code) {
 		return tourPackageRepository.findOne(code);
+	}
+
+	public TourPackage lookupTourPackageByName(String name) {
+		return tourPackageRepository.findByName(name);
 	}
 
 	public long totalTourPackages() {

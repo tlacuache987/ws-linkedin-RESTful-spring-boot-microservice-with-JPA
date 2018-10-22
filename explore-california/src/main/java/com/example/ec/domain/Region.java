@@ -4,7 +4,7 @@ public enum Region {
 
 	CENTRAL_COAST("Central Coast"),
 	SOUTHERN_CALIFORNIA("Southern California"),
-	NORTHEN_CALIFORNIA("Northen California"),
+	NORTHERN_CALIFORNIA("Northern California"),
 	VARIES("Varies");
 
 	private String label;
